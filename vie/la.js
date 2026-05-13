@@ -97,7 +97,11 @@ document.addEventListener("keydown", (e) => {
     renderGame();
 });
 
-restartBtn.addEventListener("click", restartGame);
+restartBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    restartGame();
+});
 
 createBoard();
 renderGame();
+window.focus();
