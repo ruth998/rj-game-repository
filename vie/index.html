@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>API Search UI</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="the.css">
 </head>
 <body>
+    <h1>Word Guess Game</h1>
+    <p>Guess the hidden 5-letter word in 6 tries. Type a word to begin.</p>
 
-  <div class="container">
-    <h1>API Search UI</h1>
+    <div id="game-board" aria-live="polite"></div>
+    <div id="status" role="status"></div>
+    <button id="restart-btn" type="button">Restart Game</button>
 
-    <p>Search for data using a public API.</p>
-
-    <div class="search-box">
-      <input type="text" placeholder="Enter a search term">
-      <button>Search</button>
-    </div>
-
-    <div id="statusMessage"></div>
-
-    <div id="resultsContainer"></div>
-  </div>
-
+    <!-- Add defer to ensure script runs after HTML is parsed -->
+    <script src="la.js" defer></script>
 </body>
 </html>
