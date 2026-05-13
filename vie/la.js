@@ -10,7 +10,6 @@ const game = {
 const board = document.getElementById("game-board");
 const status = document.getElementById("status");
 const restartBtn = document.getElementById("restart-btn");
-const hiddenInput = document.getElementById("hidden-input");
 
 function createBoard() {
     board.innerHTML = "";
@@ -93,7 +92,7 @@ function restartGame() {
     renderGame();
 }
 
-hiddenInput.addEventListener("keydown", (e) => {
+document.addEventListener("keydown", (e) => {
     processInput(e.key.toUpperCase());
     renderGame();
 });
@@ -105,4 +104,3 @@ restartBtn.addEventListener("click", (e) => {
 
 createBoard();
 renderGame();
-hiddenInput.focus();
