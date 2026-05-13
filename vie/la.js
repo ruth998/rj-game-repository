@@ -92,6 +92,8 @@ function restartGame() {
     renderGame();
 }
 
+board.focus();
+
 document.addEventListener("keydown", (e) => {
     processInput(e.key.toUpperCase());
     renderGame();
